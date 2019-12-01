@@ -30,6 +30,10 @@ body {
   body a:hover {
     color: #F79F1F; }
 
+.ss {
+  width: 200px;
+  height: 140px; }
+
 .sidebar-container {
   position: fixed;
   top: 0;
@@ -63,6 +67,7 @@ a:hover {
   color: #ccc; }
 
 .toggle-btn {
+  background-color: rgba(225, 255, 255, 0.3);
   position: absolute;
   top: 2px;
   right: -50px;
@@ -168,10 +173,12 @@ a:hover {
     box-shadow: none; }
 
 #furniture p {
-  font-size: 1.2rem; }
+  font-size: 1rem; }
 
 #quality {
   background: #fff; }
+  #quality p {
+    font-size: 1rem; }
   #quality img {
     width: 200px;
     height: 200px;
@@ -202,6 +209,8 @@ a:hover {
     left: 0px;
     height: 100%;
     width: 100%; }
+  #video-overlay .btn-outline-light:focus {
+    box-shadow: none; }
 
 .video-section .border-box {
   border: 1px solid #fbcb84;
@@ -221,7 +230,7 @@ a:hover {
   font-size: 1.1rem; }
 
 #about-us {
-  font-size: 1.2rem; }
+  font-size: 1rem; }
   #about-us .about-us-img {
     border-radius: 0.3rem; }
 
