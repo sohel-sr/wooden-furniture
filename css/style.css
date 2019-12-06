@@ -5,6 +5,10 @@
   text-decoration: none;
   font-family: 'Proza Libre', sans-serif; }
 
+::selection {
+  background: #7c3383;
+  color: white; }
+
 @media (max-width: 991px) {
   .xm-none {
     display: none; } }
@@ -13,22 +17,64 @@
   #top-navbar {
     display: none; }
   .toggle-btn {
-    background-color: #ffff; }
-  #top-overlay h1 {
-    font-size: 4rem; } }
+    background-color: #ffff; } }
 
 @media (max-width: 576px) {
   #top-navbar {
     display: none; }
   .toggle-btn {
-    background-color: #ffff; }
-  #top-overlay h1 {
-    font-size: 3rem; } }
+    background-color: #ffff; } }
+
+@media (max-width: 375px) {
+  #top-overlay .font-fix {
+    font-size: 3rem;
+    font-weight: 500; }
+  #getstarted .font-fix {
+    font-size: 3.5rem; } }
 
 body {
   background-color: #f1f1f1; }
   body a:hover {
     color: #F79F1F; }
+
+.scroll-downs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 34px;
+  height: 55px; }
+
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box; }
+
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite; }
+
+@keyframes scroll {
+  0% {
+    opacity: 0; }
+  10% {
+    transform: translateY(0);
+    opacity: 1; }
+  100% {
+    transform: translateY(15px);
+    opacity: 0; } }
 
 .ss {
   width: 200px;
@@ -156,11 +202,13 @@ a:hover {
 
 #top-overlay {
   background-image: url("../img/bg1.png");
-  min-height: 600px;
+  min-height: 100vh;
   position: relative;
   background-repeat: no-repeat;
-  background: cover;
+  background-position: cover;
   background-size: cover; }
+  #top-overlay h1 {
+    font-size: 4rem; }
   #top-overlay .primary-overlay {
     background: rgba(0, 0, 0, 0.8);
     min-height: 600px;
@@ -171,6 +219,17 @@ a:hover {
     width: 100%; }
   #top-overlay .btn-outline-light:focus {
     box-shadow: none; }
+
+.top-btn {
+  width: 48px;
+  height: 40px;
+  padding-top: 18px;
+  padding-left: 15px;
+  margin-right: 5px;
+  border-radius: 3px 3px 0 0; }
+
+#furniture h2 {
+  border: 1px solid #ccc; }
 
 #furniture p {
   font-size: 1rem; }
@@ -233,9 +292,78 @@ a:hover {
   font-size: 1rem; }
   #about-us .about-us-img {
     border-radius: 0.3rem; }
+  #about-us h3 {
+    border: 1px solid #ccc; }
 
 #footer {
   background-color: #000; }
   #footer .footer-logo {
     width: 100px;
     height: 80px; }
+
+#getstarted {
+  position: relative;
+  background: url("../img/about.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+  #getstarted .dark-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  #getstarted h2 {
+    font-size: 5rem; }
+
+#about-wooden-furniture h3 {
+  font-size: 3rem;
+  background: linear-gradient(to left, #7065d6, #e66ad5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+#about-wooden-furniture p {
+  font-size: 1.1rem; }
+
+#about-wooden-furniture img {
+  width: 350px;
+  height: 200px;
+  position: relative; }
+
+#about-wooden-furniture .about-video-header {
+  font-size: 2rem;
+  font-weight: 700; }
+
+#about-wooden-furniture .about-video-icon1 {
+  left: 50%;
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 35%;
+  font-size: 2rem; }
+
+#about-wooden-furniture .about-video-icon1:hover {
+  color: rgba(255, 0, 0, 0.7); }
+
+#about-wooden-furniture .about-video-icon3 {
+  left: 50%;
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 60%;
+  font-size: 2rem; }
+
+#about-wooden-furniture .about-video-icon2:hover {
+  color: rgba(255, 0, 0, 0.7); }
+
+#team {
+  background: #fff; }
+  #team h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    border: 1px solid #ccc; }
+  #team .team1 {
+    transition: box-shadow .3s; }
+  #team .team1:hover {
+    box-shadow: 0 0 20px rgba(100, 206, 249, 0.4); }
