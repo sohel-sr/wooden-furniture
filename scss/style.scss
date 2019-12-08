@@ -12,6 +12,7 @@
  }
 
 $primary-overlay: rgba(0, 0, 0, 0.8);
+$box-shadow: 0 0 20px rgba(100,206,249,.4);
 @media(max-width:991px){
   .xm-none{
     display: none;
@@ -431,6 +432,38 @@ $primary-overlay: rgba(0, 0, 0, 0.8);
     transition: box-shadow .3s;
   }
   .team1:hover {
-  box-shadow: 0 0 20px rgba(100,206,249,.4);
+  box-shadow:$box-shadow;
 }
+}
+#happiest-clients{
+  font-size: 1.1rem;
+  h2{
+    font-weight: 700;
+    font-size: 2rem;
+    border: 1px solid #ccc;
+  }
+  .shadows:hover{
+    box-shadow:$box-shadow;
+  }
+  .client-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+  }
+  .client-img:hover{
+    transition: 0.3s;
+    border-radius: 2px;
+  }
+}
+#location{
+  background-color: #ccc;
+  .address{
+    background-color: #f2f2f2;
+  }
+  h2{
+    font-weight: 700;
+    font-size: 2rem;
+    border: 1px solid #ccc;
+  }
 }

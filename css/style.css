@@ -367,3 +367,28 @@ a:hover {
     transition: box-shadow .3s; }
   #team .team1:hover {
     box-shadow: 0 0 20px rgba(100, 206, 249, 0.4); }
+
+#happiest-clients {
+  font-size: 1.1rem; }
+  #happiest-clients h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    border: 1px solid #ccc; }
+  #happiest-clients .shadows:hover {
+    box-shadow: 0 0 20px rgba(100, 206, 249, 0.4); }
+  #happiest-clients .client-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px; }
+  #happiest-clients .client-img:hover {
+    transition: 0.3s;
+    border-radius: 2px; }
+
+#location {
+  background-color: #ccc; }
+  #location .address {
+    background-color: #f2f2f2; }
+  #location h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    border: 1px solid #ccc; }
