@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/uikit.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Wooden Furniture</title>
+</head>
+<body>
+
+  <!-- sidebar nav -->
+     <div class="sidebar-container  pl-3" >
+      <a class="navbar-brand">
+        <img class="img-fluid logo ss" src="img/w-logo.png" alt="logo">
+      </a>
+      <div class="d-flex flex-row pl-5">
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item">
+            <a href="" class="nav-link text-light"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </div>
+        <ul class="sidebar nav-list">
+          <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
+          <li class="nav-item">
+               <a class="nav-link current collapsed" href="#submenu1" data-toggle="collapse" data-target="#submenu1" > products <span><i class="fas fa-angle-down"></i></span> </a>
+               <div class="collapse shadow" id="submenu1" aria-expanded="false">
+                  <ul class="flex-column px-3 mt-1 nav">
+                      <li class="nav-item"><a class="nav-link " href="collection.html">Top Collection</a></li>
+                      <li class="nav-item"><a class="nav-link " href="bed.html">Bed</a></li>
+                      <li class="nav-item"><a class="nav-link " href="chair.html">Chair</a></li>
+                      <li class="nav-item"><a class="nav-link current" href="table.html">Table</a></li>
+                      <li class="nav-item mb-2"><a class="nav-link " href="sofa.html">Sofa</a></li>
+                  </ul>
+              </div>
+
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
+        </ul>
+        <div class="toggle-btn">
+          <span class="sidebar-span"></span>
+        </div>
+      </div>
+      <!-- end of sidebar nav -->
+<!-- nav section -->
+<nav class="navbar navbar-expand-sm fixed-top" id="top-navbar" >
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <img class="img-fluid logo" src="img/w-logo.png" alt="logo">
+      </a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item pl-2">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item pl-2">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item  pl-2">
+            <div class="dropdown">
+            <a class="nav-link current dropdown-toggle"  href="#" id="products-dropdown-menu" role="button" data-toggle="dropdown">Products</a>
+                    <div class="dropdown-menu top-dropdown pt-3" aria-labelledby="products-dropdown-menu">
+                    <a class="dropdown-item pl-5 pt-3 top-dropdown-item" href="collection.html">Top Collection</a>
+                    <a class="dropdown-item pl-5 py-3 top-dropdown-item" href="bed.html">Bed</a>
+                    <a class="dropdown-item pl-5 py-3 top-dropdown-item" href="chair.html">Chair</a>
+                    <a class="dropdown-item pl-5 py-3 top-dropdown-item current" href="table.html">Table</a>
+                    <a class="dropdown-item pl-5 py-3 top-dropdown-item" href="sofa.html">Sofa</a>
+                  </div>
+          </div>
+          </li>
+          <li class="nav-item pl-2">
+            <a class="nav-link " href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex flex-row ml-auto">
+          <ul class="navbar-nav flex-row ">
+            <li class="nav-item ">
+              <a href="" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+          </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- top button  -->
+<section id="totop">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+            <a class="bg-info ml-auto text-light float-right top-btn fixed-bottom" href="#top-navbar" uk-totop uk-scroll></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end of  top button  -->
+<!-- top image section -->
+<sectoin id="collection-top-img">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-7 col-md-7 col-sm-6 padding-solve">
+        <img class="img-fluid" src="img/products/table/table.jpg" alt="">
+      </div>
+      <div class="col-lg-5 col-md-5 col-sm-6 collection-top-text">
+        <h1 class="font-fix mt-lg-5 mt-md-2 pt-lg-5 pt-md-5 pt-sm-3 pb-3 text-uppercase text-left">Shop your dream</h1>
+        <p>Table cover you! Discover our wide selection of tables in different designs!
+          Whether coffee table, dining table, desk or bar table. With us you will surely find your new favorite piece to match   your individual furnishing style. Have fun shopping!</p>
+      </div>
+    </div>
+  </div>
+</sectoin>
+<!-- end of top image section -->
+<!-- category section -->
+<section class="my-5 text-center" id="category" >
+  <div class="container">
+    <div class="row">
+      <div class="col py-5">
+        <h2 class="d-inline py-2 px-3">Category</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="store-filter ">
+        <a href="store.html"> <button class="btn m-2 shadow-sm" type="button">Our Store</button></a>
+        <a href="collection.html"> <button class="btn m-2 shadow-sm" type="button">Top Collection  </button></a>
+        <a href="bed.html"> <button class="btn m-2 shadow-sm" type="button"> Bed</button> </a>
+        <a href="sofa.html"> <button class="btn m-2 shadow-sm" type="button">Sofa</button> </a>
+        <a href="table.html"> <button class="btn m-2 shadow-sm" type="button">Table</button> </a>
+        <a href="chair.html"> <button class="btn m-2 shadow-sm" type="button">Chair</button> </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end of category section -->
+<!-- top collection section -->
+<section class="py-5" id="all-products-section">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col py-5 ">
+        <a href="table.html"><h2 class="d-inline py-2 px-2 shadow-sm btn"> Table </h2></a>
+      </div>
+    </div>
+    <div class="row pb-5">
+      <div class="col-lg-3 col-md-4 col-sm-6 pt-2 ">
+        <div class="card text-muted hover-effect">
+          <a class="text-decoration-none text-reset" href="#">
+            <img src="img/products/table/table1/table1.jpg" alt="">
+            <div class="info pt-4 pl-3">
+              <div class="star-icon pb-2">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                (201)
+              </div>
+              <h5>Black & white bed</h5>
+              <p class="pt-2">Zinus Upholstered Platform Bed, Queen</p>
+              <h4>$200.00</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 pt-2">
+        <div class="card text-muted hover-effect">
+          <a class="text-decoration-none text-reset" href="#">
+            <img src="img/products/table/table2/table1.jpg" alt="">
+            <div class="info pt-4 pl-3">
+              <div class="star-icon pb-2">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                (201)
+              </div>
+              <h5>Black & white bed</h5>
+              <p class="pt-2">Zinus Upholstered Platform Bed, Queen</p>
+              <h4>$210.00</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 pt-2">
+        <div class="card text-muted hover-effect">
+          <a class="text-decoration-none text-reset" href="#">
+            <img src="img/products/table/table3/table1.jpg" alt="">
+            <div class="info pt-4 pl-3">
+              <div class="star-icon pb-2">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                (201)
+              </div>
+              <h5>Black & white bed</h5>
+              <p class="pt-2">Zinus Upholstered Platform Bed, Queen</p>
+              <h4>$200.00</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 pt-2 ">
+        <div class="card text-muted hover-effect">
+          <a class="text-decoration-none text-reset" href="#">
+            <img src="img/products/table/table4/table1.jpg" alt="">
+            <div class="info pt-4 pl-3">
+              <div class="star-icon pb-2">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                (201)
+              </div>
+              <h5>Black & white bed</h5>
+              <p class="pt-2">Zinus Upholstered Platform Bed, Queen</p>
+              <h4>$190.00</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row pb-5">
+      <div class="col-lg-3 col-md-4 col-sm-6 pt-2 ">
+        <div class="card text-muted hover-effect">
+          <a class="text-decoration-none text-reset" href="#">
+            <img src="img/products/table/table1/table1.jpg" alt="">
+            <div class="info pt-4 pl-3">
+              <div class="star-icon pb-2">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                (201)
+              </div>
+              <h5>Black & white bed</h5>
+              <p class="pt-2">Zinus Upholstered Platform Bed, Queen</p>
+              <h4>$200.00</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 pt-2">
+        <div class="card text-muted hover-effect">
+          <a class="text-decoration-none text-reset" href="#">
+            <img src="img/products/table/table2/table1.jpg" alt="">
+            <div class="info pt-4 pl-3">
+              <div class="star-icon pb-2">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                (201)
+              </div>
+              <h5>Black & white bed</h5>
+              <p class="pt-2">Zinus Upholstered Platform Bed, Queen</p>
+              <h4>$210.00</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 pt-2">
+        <div class="card text-muted hover-effect">
+          <a class="text-decoration-none text-reset" href="#">
+            <img src="img/products/table/table3/table1.jpg" alt="">
+            <div class="info pt-4 pl-3">
+              <div class="star-icon pb-2">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                (201)
+              </div>
+              <h5>Black & white bed</h5>
+              <p class="pt-2">Zinus Upholstered Platform Bed, Queen</p>
+              <h4>$200.00</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 pt-2 ">
+        <div class="card text-muted hover-effect">
+          <a class="text-decoration-none text-reset" href="#">
+            <img src="img/products/table/table4/table1.jpg" alt="">
+            <div class="info pt-4 pl-3">
+              <div class="star-icon pb-2">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                (201)
+              </div>
+              <h5>Black & white bed</h5>
+              <p class="pt-2">Zinus Upholstered Platform Bed, Queen</p>
+              <h4>$190.00</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row pb-5">
+      <div class="col-lg-3 col-md-4 col-sm-6 pt-2 ">
+        <div class="card text-muted hover-effect">
+          <a class="text-decoration-none text-reset" href="#">
+            <img src="img/products/table/table1/table1.jpg" alt="">
+            <div class="info pt-4 pl-3">
+              <div class="star-icon pb-2">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                (201)
+              </div>
+              <h5>Black & white bed</h5>
+              <p class="pt-2">Zinus Upholstered Platform Bed, Queen</p>
+              <h4>$200.00</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 pt-2">
+        <div class="card text-muted hover-effect">
+          <a class="text-decoration-none text-reset" href="#">
+            <img src="img/products/table/table2/table1.jpg" alt="">
+            <div class="info pt-4 pl-3">
+              <div class="star-icon pb-2">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                (201)
+              </div>
+              <h5>Black & white bed</h5>
+              <p class="pt-2">Zinus Upholstered Platform Bed, Queen</p>
+              <h4>$210.00</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 pt-2">
+        <div class="card text-muted hover-effect">
+          <a class="text-decoration-none text-reset" href="#">
+            <img src="img/products/table/table3/table1.jpg" alt="">
+            <div class="info pt-4 pl-3">
+              <div class="star-icon pb-2">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                (201)
+              </div>
+              <h5>Black & white bed</h5>
+              <p class="pt-2">Zinus Upholstered Platform Bed, Queen</p>
+              <h4>$200.00</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 pt-2 ">
+        <div class="card text-muted hover-effect">
+          <a class="text-decoration-none text-reset" href="#">
+            <img src="img/products/table/table4/table1.jpg" alt="">
+            <div class="info pt-4 pl-3">
+              <div class="star-icon pb-2">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                (201)
+              </div>
+              <h5>Black & white bed</h5>
+              <p class="pt-2">Zinus Upholstered Platform Bed, Queen</p>
+              <h4>$190.00</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- end of top table section -->
+
+
+    <!-- footer section -->
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 pt-4 text-center">
+            <h6 class="text-light">&copy 2019 wooden furniture</h6>
+          </div>
+          <div class="col-lg-5 text-center pl-5">
+            <a class="">
+              <img class="img-fluid footer-logo" src="img/w-logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="col-lg-4 text-center pt-4">
+            <h6 class="text-light">Design by Sr...</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of footer section -->
+
+<!-- jquery file link -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+<script src="https://kit.fontawesome.com/76c81cd4c7.js"></script>
+</body>
+</html>

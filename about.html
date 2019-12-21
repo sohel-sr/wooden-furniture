@@ -16,21 +16,30 @@
       <a class="navbar-brand">
         <img class="img-fluid logo ss" src="img/w-logo.png" alt="logo">
       </a>
+      <div class="d-flex flex-row pl-5">
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item">
+            <a href="" class="nav-link text-light"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </div>
         <ul class="sidebar nav-list">
           <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
+          <li class="nav-item "><a class="nav-link current" href="about.html">about</a></li>
           <li class="nav-item">
                <a class="nav-link collapsed" href="#submenu1" data-toggle="collapse" data-target="#submenu1" > products <span><i class="fas fa-angle-down"></i></span> </a>
                <div class="collapse shadow" id="submenu1" aria-expanded="false">
-                  <ul class="flex-column pl-4 nav">
-                      <li class="nav-item"><a class="nav-link py-0" href="#">Chair</a></li>
-                      <li class="nav-item"><a class="nav-link py-0" href="#">Table</a></li>
-                      <li class="nav-item"><a class="nav-link py-0" href="#">Sofa</a></li>
+                  <ul class="flex-column px-3 mt-1 nav">
+                      <li class="nav-item"><a class="nav-link" href="collection.html">Top Collection</a></li>
+                      <li class="nav-item"><a class="nav-link" href="bed.html">Bed</a></li>
+                      <li class="nav-item"><a class="nav-link" href="chair.html">Chair</a></li>
+                      <li class="nav-item"><a class="nav-link" href="table.html">Table</a></li>
+                      <li class="nav-item mb-2"><a class="nav-link " href="sofa.html">Sofa</a></li>
                   </ul>
               </div>
 
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
         </ul>
         <div class="toggle-btn">
           <span class="sidebar-span"></span>
@@ -39,7 +48,7 @@
       <!-- end of sidebar nav -->
 <!-- nav section -->
 <nav class="navbar navbar-expand-sm fixed-top" id="top-navbar">
-    <div class="container">
+    <div class="container-fluid">
       <a class="navbar-brand">
         <img class="img-fluid logo" src="img/w-logo.png" alt="logo">
       </a>
@@ -48,22 +57,31 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item pl-2">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link current" href="about.html">About</a>
           </li>
           <li class="nav-item  pl-2">
             <div class="dropdown">
             <a class="nav-link  dropdown-toggle"  href="#" id="products-dropdown-menu" role="button" data-toggle="dropdown">Products</a>
                     <div class="dropdown-menu top-dropdown pt-3" aria-labelledby="products-dropdown-menu">
-                    <a class="dropdown-item pl-5 pt-3 top-dropdown-item" href="#">Chair</a>
-                    <a class="dropdown-item pl-5 pt-3 top-dropdown-item" href="#">Table</a>
-                    <a class="dropdown-item pl-5 pt-3 pb-3 top-dropdown-item" href="#">Sofa</a>
+                      <a class="dropdown-item pl-5 py-3 top-dropdown-item" href="collection.html">Top Collection</a>
+                      <a class="dropdown-item pl-5 py-3 top-dropdown-item" href="bed.html">Bed</a>
+                      <a class="dropdown-item pl-5 py-3 top-dropdown-item" href="chair.html">Chair</a>
+                      <a class="dropdown-item pl-5 py-3 top-dropdown-item" href="table.html">Table</a>
+                      <a class="dropdown-item pl-5 py-3 top-dropdown-item" href="sofa.html">Sofa</a>
                   </div>
           </div>
           </li>
           <li class="nav-item pl-2">
-            <a class="nav-link " href="#contact">Contact</a>
+            <a class="nav-link " href="contact.html">Contact</a>
           </li>
         </ul>
+        <div class="d-flex flex-row ml-auto">
+          <ul class="navbar-nav flex-row ">
+            <li class="nav-item ">
+              <a href="" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+          </ul>
+        </div>
     </div>
 </nav>
 <!-- end of nav section -->
@@ -75,6 +93,7 @@
         <div class="col-lg-12 mt-5  pt-5">
           <h2 class="font-fix text-light mt-5 pt-5 pb-3">Get to know us</h2>
           <p class="lead pt-2">We're Wooder Fourniture.</p>
+          <a class="btn btn-outline-light btn-lg text-uppercase mt-2" href="store.html">products <i class="fas fa-long-arrow-alt-right pl-2"></i></a>
         </div>
       </div>
       <div class="row">
@@ -113,9 +132,9 @@
           <p class="px-5 pb-5 text-justify">Hi We're wooden furniture... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum voluptatem cupiditate nemo perspiciatis animi quibusdam eveniet unde, nisi ducimus harum.</p>
         </div>
       </div>
-      <div class="col-lg-5  d-none d-lg-block d-xl-block pl-5  text-center" uk-lightbox>
+      <div class="col-lg-5  d-none d-lg-block d-xl-block pl-5  text-center" >
 
-            <div class=" mt-5">
+            <div class=" mt-5" uk-lightbox>
               <h2 class="about-video-header pb-3 ">Our Working space</h2>
               <a  data-caption="Video"href="https://www.youtube.com/watch?v=ZvggB9FT4gM">
                 <img class="img-fluid about-video shadow" src="img/about-video.png" alt="">
@@ -124,16 +143,15 @@
             </div>
             <div class=" mt-5">
               <h2 class="about-video-header pb-3 text-center">Our Store</h2>
-              <a href="video/about-video.mp4">
-                <img class="img-fluid about-video shadow" src="img/about-video.png" alt="">
-                <i class="fa fa-play about-video-icon1"></i>
+              <a href="store.html">
+                <img class="img-fluid about-video shadow" src="img/store.png" alt="store">
               </a>
             </div>
 
       </div>
     </div>
-    <div class="row m-5  d-lg-none d-flex justify-content-between text-center" uk-lightbox>
-      <div class="col-md-6 mt-5 align-self-between">
+    <div class="row m-5  d-lg-none d-flex justify-content-between text-center" >
+      <div class="col-md-6 mt-5 align-self-between" uk-lightbox>
         <h2 class="about-video-header pb-3 ">Our Working space</h2>
         <a  data-caption="Video"href="https://www.youtube.com/watch?v=ZvggB9FT4gM">
           <img class="img-fluid about-video shadow" src="img/about-video.png" alt="">
@@ -142,9 +160,8 @@
       </div>
       <div class="col-md-6 mt-5 align-self-between text-center">
         <h2 class="about-video-header pb-3 ">Our Store</h2>
-          <a  data-caption="Video"href="https://www.youtube.com/watch?v=ZvggB9FT4gM">
-            <img class="img-fluid about-video shadow" src="img/about-video.png" alt="">
-              <i class="fa fa-play about-video-icon3"></i>
+          <a href="store.html">
+            <img class="img-fluid about-video shadow" src="img/store.png" alt="store">
           </a>
       </div>
     </div>
@@ -265,14 +282,15 @@
       </div>
     </div>
     <div class="row p-2">
-      <div class="col-lg-4 col-md-12 address p-4 rounded shadow-sm">
-          <p class="pb-3"><strong>Wooden Fourniture</strong> is headquartered in <strong>Dhaka  - 1212</strong></p>
-          <p><span class=""><i class="fas fa-map-marker-alt pr-1"></i></span> Dhaka (Headquartered)</p>
-          <p>Ghulshan</p>
-          <p>Tower 3rd Flor</p>
-          <p> <strong>Phone :</strong>  01 000 000 000 </p>
+      <div class="col-lg-4 col-md-12 address py-4 my-3 rounded shadow-sm">
+        <p class="pb-3 pt-4"><strong>Wooden Fourniture</strong> is headquartered in <strong>Dhaka  - 1212</strong></p>
+        <p class="pl-2"> <span><i class="fas fa-map-marker-alt pr-3"></i></span> Dhaka, Ghulshan (Headquartered)</p>
+        <p class="pl-2"> <span><i class="far fa-building pr-3"></i></span> Tower 3rd Flor</p>
+        <p class="pl-2"> <span><i class="fas fa-phone-volume pr-3"></i></span> <strong>Phone :</strong>  01 000 444 000 </p>
+        <p class="pl-2"> <span><i class="fas fa-phone-volume pr-3"></i></span> <strong>Phone :</strong>  01 000 555 000 </p>
+        <p class="pl-2"> <span><i class="far fa-envelope pr-3"></i></span><strong>Email :</strong>  you@gmail.com </p>
       </div>
-      <div class="col-lg-8 pl-lg-5 py-2">
+      <div class="col-lg-8 pl-lg-5 py-2 my-3">
             <iframe class="shadow rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d912.7686058268624!2d90.41623282918712!3d23.780363999035934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ2JzQ5LjMiTiA5MMKwMjUnMDAuNCJF!5e0!3m2!1sen!2sbd!4v1575792767222!5m2!1sen!2sbd" width="100%" height="450"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
     </div>
