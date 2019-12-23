@@ -264,3 +264,269 @@
 <script src="https://kit.fontawesome.com/76c81cd4c7.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/uikit.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Wooden Furniture</title>
+</head>
+<body>
+
+  <!-- sidebar nav -->
+     <div class="sidebar-container  pl-3" >
+      <a class="navbar-brand">
+        <img class="img-fluid logo ss" src="img/w-logo.png" alt="logo">
+      </a>
+      <div class="d-flex flex-row pl-5">
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item">
+            <a href="" class="nav-link text-light"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </div>
+        <ul class="sidebar nav-list">
+          <li class="nav-item "><a class="nav-link " href="index.html">home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
+          <li class="nav-item">
+               <a class="nav-link collapsed" href="#submenu1" data-toggle="collapse" data-target="#submenu1" > products <span><i class="fas fa-angle-down"></i></span> </a>
+               <div class="collapse shadow" id="submenu1" aria-expanded="false">
+                  <ul class="flex-column px-3 mt-1  nav">
+                      <li class="nav-item"><a class="nav-link" href="collection.html">Top collection</a></li>
+                      <li class="nav-item"><a class="nav-link" href="bed.html">Bed</a></li>
+                      <li class="nav-item"><a class="nav-link" href="chair.html">Chair</a></li>
+                      <li class="nav-item"><a class="nav-link" href="table.html">Table</a></li>
+                      <li class="nav-item mb-2"><a class="nav-link" href="sofa.html">Sofa</a></li>
+                  </ul>
+              </div>
+
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
+        </ul>
+        <div class="toggle-btn">
+          <span class="sidebar-span"></span>
+        </div>
+
+      </div>
+      <!-- end of sidebar nav -->
+<!-- nav section -->
+<nav class="navbar navbar-expand-sm fixed-top" id="top-navbar" >
+    <div class="container-fluid">
+      <a class="navbar-brand ml-2">
+        <img class="img-fluid logo" src="img/w-logo.png" alt="logo">
+      </a>
+        <ul class="navbar-nav ml-auto mr-5">
+          <li class="nav-item pl-2 ">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item pl-2">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item  pl-2">
+            <div class="dropdown">
+            <a class="nav-link dropdown-toggle"  href="#" id="products-dropdown-menu" role="button" data-toggle="dropdown">Products</a>
+                    <div class="dropdown-menu top-dropdown pt-3" aria-labelledby="products-dropdown-menu">
+                      <a class="dropdown-item pl-5 py-3 top-dropdown-item" href="collection.html">Top Collection</a>
+                      <a class="dropdown-item pl-5 py-3 top-dropdown-item" href="bed.html">Bed</a>
+                      <a class="dropdown-item pl-5 py-3 top-dropdown-item" href="chair.html">Chair</a>
+                      <a class="dropdown-item pl-5 py-3 top-dropdown-item" href="table.html">Table</a>
+                      <a class="dropdown-item pl-5 py-3 top-dropdown-item" href="sofa.html">Sofa</a>
+                  </div>
+          </div>
+          </li>
+          <li class="nav-item pl-2">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex flex-row ml-auto">
+          <ul class="navbar-nav flex-row ">
+            <li class="nav-item ">
+              <a href="" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+          </ul>
+        </div>
+    </div>
+</nav>
+<!-- end of nav section -->
+<!-- top button  -->
+    <a class="bg-info ml-auto text-light float-right top-btn fixed-bottom" href="#top-navbar" uk-totop uk-scroll></a>
+<!-- end of  top button  -->
+
+<section class="py-5" id="products-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+
+          <div id="mycarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner shadow-lg">
+            <div class="carousel-item carousel-img-1  active">
+              <img class="img-fluid" src="img/Products/bed/bed1/bed1.png" alt="">
+            </div>
+            <div class="carousel-item carousel-img-2">
+              <img class="img-fluid" src="img/Products/bed/bed1/bed1.4.jpg" alt="">
+            </div>
+            <div class="carousel-item carousel-img-3">
+              <img class="img-fluid" src="img/Products/bed/bed1/bed1.5.jpg" alt="">
+            </div>
+            <div class="carousel-item carousel-img-4">
+              <img class="img-fluid" src="img/Products/bed/bed1/bed1.6.jpg" alt="">
+            </div>
+            <div class="carousel-item carousel-img-5">
+              <img class="img-fluid" src="img/Products/bed/bed1/bed1.7.jpg" alt="">
+            </div>
+            <div class="carousel-item carousel-img-6">
+              <img src="img/Products/bed/bed1/bed1.3.jpg" alt="">
+            </div>
+            <div class="carousel-item carousel-img-7">
+              <img src="img/Products/bed/bed1/bed1.2.jpg" alt="">
+            </div>
+              <a href="#mycarousel" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a href="#mycarousel" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+          </div>
+          <div class="thumbnail pt-5">
+            <li class="d-inline pl-2" data-slide-to="0" data-target="#mycarousel">
+              <img class="img-fluid" src="img/Products/bed/bed1/bed1.png" alt="">
+            </li>
+            <li class="d-inline pt-5 pl-2" data-slide-to="1" data-target="#mycarousel">
+              <img class="img-fluid" src="img/Products/bed/bed1/bed1.4.jpg" alt="">
+            </li>
+            <li class="d-inline pt-5 pl-2" data-slide-to="2" data-target="#mycarousel">
+              <img class="img-fluid" src="img/Products/bed/bed1/bed1.5.jpg" alt="">
+            </li>
+            <li class="d-inline pt-5 pl-2" data-slide-to="3" data-target="#mycarousel">
+              <img class="img-fluid" src="img/Products/bed/bed1/bed1.6.jpg" alt="">
+            </li>
+            <li class="d-inline pt-5 pl-2" data-slide-to="4" data-target="#mycarousel">
+              <img class="img-fluid" src="img/Products/bed/bed1/bed1.7.jpg" alt="">
+            </li>
+            <li class="d-inline pt-5 pl-2" data-slide-to="5" data-target="#mycarousel">
+              <img class="img-fluid" src="img/Products/bed/bed1/bed1.3.jpg" alt="">
+            </li>
+            <li class="d-inline pt-5 pl-2" data-slide-to="6" data-target="#mycarousel">
+              <img class="img-fluid" src="img/Products/bed/bed1/bed1.2.jpg" alt="">
+            </li>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-4 border_left">
+      <div class="pt-5 pl-lg-5 ">
+        <div class="name-rating">
+            <p class="bold">Item number: 00213</p>
+            <div class="d-flex">
+              <h5>Black & white bed</h5>
+                <div class="star-icon pl-3 pt-1">
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  (201)
+                </div>
+            </div>
+          </div>
+            <div class="">
+              <h4 class="pt-3 pb-3"> <strong>Price:</strong> $200.00</h4>
+              <strong>Quantity :</strong> <i class="fas fa-minus btn btn-secondary mx-2"></i> <span>2</span> <i class="fas fa-plus btn btn-secondary mx-2"></i>
+            </div>
+            <div class="">
+              <button class="btn btn-danger mt-5 mr-2" type="button" name="button"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+              <button class="btn btn-warning mt-5" type="button" name="button"><i class="fas fa-cart-plus"></i> Add to card</button>
+            </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-10">
+      <div class="pl-2">
+        <h3 class="py-5">Black & white bed</h3>
+        <p class="">High quality wood and fabric, soft and comfortable to touch, with good breathability, comfortable and wearable, easy to clean.</p>
+        <h4 class="pb-2">Product information</h4>
+        <ol><i class="far fa-circle pr-2"></i> Including bed function and bed box</ol>
+        <ol><i class="far fa-circle pr-2"></i> including comfortable spring core</ol>
+        <ol><i class="far fa-circle pr-2"></i> including comfortable loose decorative and back cusions</ol>
+        <ol><i class="far fa-circle pr-2"></i> ottoman can be mounted on the left or right</ol>
+        <ol><i class="far fa-circle pr-2"></i> in 2 reference qualities</ol>
+          <table class="table table-sm mt-5">
+            <thead>
+              <tr>
+                <th scope="col">Dimensions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">width</th>
+                <td>281 cm</td>
+              </tr>
+              <tr>
+                <th scope="row">Depth</th>
+                <td>171 cm</td>
+              </tr>
+              <tr>
+                <th scope="row">Height</th>
+                <td>79 cm</td>
+              </tr>
+              <tr>
+                <th scope="row">Height bed box</th>
+                <td>19 cm</td>
+              </tr>
+              <tr>
+                <th scope="row">Height feet</th>
+                <td>5 cm</td>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+<!-- footer section -->
+<section id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 pt-4 text-center">
+        <h6 class="text-light">&copy 2019 wooden furniture</h6>
+      </div>
+      <div class="col-lg-5 text-center pl-5">
+        <a class="">
+          <img class="img-fluid footer-logo" src="img/w-logo.png" alt="logo">
+        </a>
+      </div>
+      <div class="col-lg-4 text-center pt-4">
+        <h6 class="text-light">Design by Sr...</h6>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end of footer section -->
+
+
+
+
+
+
+
+<!-- jquery file link -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+<script src="https://kit.fontawesome.com/76c81cd4c7.js"></script>
+</body>
+</html>
