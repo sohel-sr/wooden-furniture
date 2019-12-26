@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/uikit.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Wooden Furniture</title>
+</head>
+<body>
+
+  <!-- sidebar nav -->
+     <div class="sidebar-container  pl-3" >
+      <a class="navbar-brand">
+        <img class="img-fluid logo ss" src="img/w-logo.png" alt="logo">
+      </a>
+      <div class="d-flex flex-row pl-5">
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item">
+            <a href="" class="nav-link text-light"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </div>
+        <ul class="sidebar nav-list">
+          <li class="nav-item "><a class="nav-link " href="index.html">home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
+          <li class="nav-item">
+               <a class="nav-link collapsed" href="#submenu1" data-toggle="collapse" data-target="#submenu1" > products <span><i class="fas fa-angle-down"></i></span> </a>
+               <div class="collapse shadow" id="submenu1" aria-expanded="false">
+                  <ul class="flex-column px-3 mt-1  nav">
+                      <li class="nav-item"><a class="nav-link" href="collection.html">Top collection</a></li>
+                      <li class="nav-item"><a class="nav-link" href="bed.html">Bed</a></li>
+                      <li class="nav-item"><a class="nav-link" href="chair.html">Chair</a></li>
+                      <li class="nav-item"><a class="nav-link" href="table.html">Table</a></li>
+                      <li class="nav-item mb-2"><a class="nav-link" href="sofa.html">Sofa</a></li>
+                  </ul>
+              </div>
+
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
+        </ul>
+        <div class="toggle-btn">
+          <span class="sidebar-span"></span>
+        </div>
+
+      </div>
+      <!-- end of sidebar nav -->
+<!-- nav section -->
+<nav class="navbar navbar-expand-sm fixed-top" id="top-navbar" >
+    <div class="container-fluid">
+      <a class="navbar-brand ml-2">
+        <img class="img-fluid logo" src="img/w-logo.png" alt="logo">
+      </a>
+        <ul class="navbar-nav ml-auto mr-5">
+          <li class="nav-item pl-2 ">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item pl-2">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item  pl-2">
+            <div class="dropdown">
+            <a class="nav-link dropdown-toggle"  href="#" id="products-dropdown-menu" role="button" data-toggle="dropdown">Products</a>
+                    <div class="dropdown-menu top-dropdown pt-3" aria-labelledby="products-dropdown-menu">
+                      <a class="dropdown-item pl-5 py-3 top-dropdown-item" href="collection.html">Top Collection</a>
+                      <a class="dropdown-item pl-5 py-3 top-dropdown-item" href="bed.html">Bed</a>
+                      <a class="dropdown-item pl-5 py-3 top-dropdown-item" href="chair.html">Chair</a>
+                      <a class="dropdown-item pl-5 py-3 top-dropdown-item" href="table.html">Table</a>
+                      <a class="dropdown-item pl-5 py-3 top-dropdown-item" href="sofa.html">Sofa</a>
+                  </div>
+          </div>
+          </li>
+          <li class="nav-item pl-2">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex flex-row ml-auto">
+          <ul class="navbar-nav flex-row ">
+            <li class="nav-item ">
+              <a href="" class="nav-link"><i data-count="2" class="fas fa-shopping-cart badge ddr"> </i></a>
+            </li>
+          </ul>
+        </div>
+    </div>
+</nav>
+<!-- end of nav section -->
+<!-- top button  -->
+    <a class="bg-info ml-auto text-light float-right top-btn fixed-bottom" href="#top-navbar" uk-totop uk-scroll></a>
+<!-- end of  top button  -->
+<section class="py-5" id="order-menu">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 order-help text-light">
+        <h4 class="text-weight-bold pt-3 pl-2 text-light">Need help?</h4>
+        <p class="pl-2">If you need help. Contact us and let us help you. Support is available for 24 hours.
+        </p>
+        <p class="pl-2">+01 0000 000 00 <br>
+          you@gmail.com</p>
+      </div>
+      <div class="col-lg-8 order-step">
+        <ul class="d-flex justify-content-between nav p-lg-5  pt-sm-3 pb-sm-5">
+          <li class="nav-item">
+            <span class="badge order-badge text-decoration-none nav-link " data-count="1">Card </span>
+          </li>
+          <li class="nav-item">
+            <span class="badge order-badge text-decoration-none nav-link" data-count="2">Information</span>
+          </li>
+          <li class="nav-item">
+            <span class="badge order-badge text-decoration-none nav-link border-step-current" data-count="3">Shipping</span>
+          </li>
+          <li class="nav-item">
+            <span class="badge order-badge text-decoration-none nav-link" data-count="4">Payment</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5" id="payment-method">
+  <div class="container borderss text-center ">
+    <h2 class="text-weight-bold pt-5">Payment Method</h2>
+    <div class="row justify-content-center">
+      <div class="col py-5">
+        <a href="#"> <img class="img-fluid img-thumbnail m-2" src="img/mc.png" alt=""> </a>
+        <a href="#"> <img class="img-fluid img-thumbnail m-2" src="img/v.png" alt=""> </a>
+        <a href="#"> <img class="img-fluid img-thumbnail m-2" src="img/pp.png" alt=""> </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3>Card Number *</h3>
+        <input type="text" name="card number" value="" placeholder="xxxx-xxxx-xxxx-xxxx" class="form-control form-control-md">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+    <div class="row justify-content-center my-4">
+      <div class="col-lg-3">
+        <a href="order-page-information.html" class="btn btn-info"><i class="fas fa-long-arrow-alt-left pr-1"></i> previous</a>
+      </div>
+      <div class="col-lg-3">
+        <a href="order-page-payment.html" class="btn btn-info">next <i class="fas fa-long-arrow-alt-right pl-1"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- footer section -->
+<section id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 pt-4 text-center">
+        <h6 class="text-light">&copy 2019 wooden furniture</h6>
+      </div>
+      <div class="col-lg-5 text-center pl-5">
+        <a class="">
+          <img class="img-fluid footer-logo" src="img/w-logo.png" alt="logo">
+        </a>
+      </div>
+      <div class="col-lg-4 text-center pt-4">
+        <h6 class="text-light">Design by Sr...</h6>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end of footer section -->
+
+
+
+
+
+
+
+<!-- jquery file link -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+<script src="https://kit.fontawesome.com/76c81cd4c7.js"></script>
+</body>
+</html>
